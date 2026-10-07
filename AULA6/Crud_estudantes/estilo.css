@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+    min-height: 100vh;
+}
+.cabecalho {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+header {
+    margin-bottom: 30px;
+}
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+.form-section,
+.table-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+}
+
+.form-section h2,
+.table-section h2 {
+    margin-bottom: 6px;
+}
+
+.form-section h2 {
+    font-size: 21px;
+}
+
+.table-section h2 {
+    font-size: 21px;
+}
+.form-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.input-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.input-box input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+.media-box {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    background: #f3f4f6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media-box span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.media-box strong {
+    font-size: 24px;
+    color: #2563eb;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#btnAdicionar {
+    background: #2563eb;
+    color: white;
+}
+
+#btnAdicionar:hover {
+    background: #1d4ed8;
+}
+#btnActualizar {
+    background: #f59e0b;
+    color: white;
+}
+#btnActualizar:hover {
+    background: #d97706;
+}
+#btnRemover {
+    background: #ef4444;
+    color: white;
+}
+#btnRemover:hover {
+    background: #dc2626;
+}
+#btnEliminar {
+    background: #374151;
+    color: white;
+}
+#btnEliminar:hover {
+    background: #1f2937;
+}
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-header p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+#totalEstudantes {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+thead {
+    background: #f3f4f6;
+}
+
+th {
+    text-align: left;
+    padding: 14px;
+    font-size: 13px;
+    color: #374151;
+}
+
+td {
+    padding: 14px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+tbody tr {
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .table-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
